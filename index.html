@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Una propuesta de amor elegante, moderna y llena de detalles románticos.">
+  <title>Para Ti, Mi Amor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Nunito+Sans:wght@300;400;600;700&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient-layer" aria-hidden="true">
+    <span class="blur-orb orb-one"></span>
+    <span class="blur-orb orb-two"></span>
+    <span class="blur-orb orb-three"></span>
+    <span class="grain"></span>
+  </div>
+
+  <button class="audio-toggle" id="audioToggle" type="button" aria-label="Activar o pausar música" aria-pressed="false">
+    <span class="audio-icon" aria-hidden="true">♪</span>
+    <span class="audio-label">Activar música</span>
+  </button>
+
+  <div class="cinema-transition" id="cinemaTransition" aria-hidden="true"></div>
+
+  <main class="experience" id="experience">
+    <section class="scene scene-welcome active" id="welcomeScene" aria-labelledby="welcomeTitle">
+      <div class="glass-card welcome-card">
+        <p class="eyebrow">Una historia con destino</p>
+        <h1 id="welcomeTitle">Hay momentos que merecen sentirse eternos.</h1>
+        <p class="lead-text">Hoy quiero regalarte un instante inolvidable, lleno de ternura, luz y amor verdadero.</p>
+        <button class="btn btn-start" id="startBtn" type="button">Comenzar esta sorpresa</button>
+      </div>
+
+      <div class="sunflower-field sunflower-field-intro" id="introSunflowerField" aria-hidden="true"></div>
+    </section>
+
+    <section class="scene scene-question" id="questionScene" aria-labelledby="questionTitle">
+      <div class="glass-card question-card">
+        <p class="eyebrow">Con todo mi corazón</p>
+        <h2 id="questionTitle">¿Quieres ser mi mujer para toda la vida?</h2>
+        <p class="question-sub">Prometo cuidarte, escucharte y elegirte cada día.</p>
+
+        <div class="choice-zone">
+          <button class="btn btn-accept" id="acceptBtn" type="button">Aceptar</button>
+          <button class="btn btn-no" id="noBtn" type="button">No</button>
+        </div>
+
+        <p class="no-hint" id="noHint" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="scene scene-finale" id="finalScene" aria-labelledby="finalTitle">
+      <div class="glass-card final-card">
+        <p class="eyebrow">Nuestro para siempre</p>
+        <h2 id="finalTitle">Entonces seremos felices por siempre y te amaré</h2>
+        <p class="final-sub">Gracias por hacer de mi vida un jardín de alegría infinita.</p>
+      </div>
+
+      <div class="sunflower-field sunflower-field-finale" id="sunflowerField" aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <div class="particle-layer" id="particleLayer" aria-hidden="true"></div>
+
+  <audio id="bgMusic" loop preload="auto" autoplay playsinline>
+    <source src="assets/audio/mi persona favorita.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio en HTML5.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
